@@ -1,12 +1,12 @@
-import './App.css';
+import './css/App.css'
+import { GlobalProvider } from './component/GlobalContext';
+import Navigation from './component/Navigation';
 
 const App = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <GlobalProvider>
+      <Navigation />
+    </GlobalProvider>
   );
 };
-
 export default App;

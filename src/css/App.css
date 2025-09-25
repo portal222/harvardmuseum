@@ -1,0 +1,581 @@
+@import '../css/_cssreset.css';
+
+@font-face {
+  font-family: mainFont;
+  src: url("../assets/Antic-Regular.ttf");
+}
+
+@font-face {
+  font-family: title;
+  src: url("../assets/VastShadow-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  font-family: mainFont;
+  height: 1000px;
+  background-color: #020917;
+}
+
+.provider {
+  margin: auto;
+  display: flex;
+  width: 1300px;
+  height: 120px;
+  background-color: gray;
+}
+
+.provider .logo {
+  padding: 10px 0px 10px 40px;
+  width: 120px;
+  height: 120px;
+}
+
+.provider .logo img {
+  width: 90px;
+}
+
+.provider .navlink {
+  text-decoration: none;
+}
+
+.provider .title {
+  width: 1180px;
+  font-size: 3rem;
+  font-family: title;
+  color: antiquewhite;
+  text-decoration: none;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  min-height: 100vh;
+  line-height: 1.1;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.5;
+  padding: 5px;
+}
+
+.harvard {
+  display: flex;
+  margin: auto;
+  width: 1300px;
+  background-color: rgb(38, 48, 59);
+  justify-content: center;
+  align-items: center;
+}
+
+.harvard .homeImg {
+  width: 1300px;
+}
+
+.harvard .welcome {
+  margin: auto;
+  padding: 20px;
+  width: 450px;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.harvard .welcome .button {
+  background-image: linear-gradient(#e1c8af, #af967d);
+  color: #321919;
+  border-radius: 8px;
+  border-bottom: #321919;
+  width: 100px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.harvard .welcome .button:hover {
+  background-image: linear-gradient(#c8c8af, #af967d);
+  color: #4b4b32;
+}
+
+.harvard .result {
+  padding: 10px 40px 30px 50px;
+  font-size: 1.7rem;
+  background-image: linear-gradient(#646464, rgb(38, 48, 59));
+  height: 90px;
+}
+
+.harvard .harImg .image {
+  width: 700px;
+  padding: 10px 30px;
+  cursor: zoom-in;
+}
+
+.harvard .harImg .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeInBg 0.4s ease-in;
+}
+
+.harvard .harImg .lightbox-img {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.4s ease-in;
+}
+
+@keyframes fadeInBg {
+  from {
+    background-color: rgba(10, 10, 10, 0);
+  }
+
+  to {
+    background-color: rgba(10, 10, 10, 0.85);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.harvard .title {
+  font-size: 1.7rem;
+  padding: 10px 30px;
+  width: 700px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.harvard .name {
+  font-size: 2rem;
+  color: #c8c8af;
+  opacity: 0.90;
+  text-align: left;
+  padding: 10px 10px 30px 40px;
+  cursor: pointer;
+}
+
+.harvard .name:hover {
+  color: rgb(81, 140, 81);
+}
+
+.harvard .harImg .nameCulture {
+  display: flex;
+}
+
+.harvard .harImg .nameCulture .culture {
+  font-size: 1.5rem;
+  padding-top: 17px;
+  padding-left: 7px;
+  color: #c8c8af;
+  opacity: 0.75;
+}
+
+.harvard .colorGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+  width: 340px;
+  padding: 50px 10px;
+}
+
+.harvard .harText .colorGrid p {
+  width: 80px;
+  height: 10px;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.harvard .harText .colorGrid .color {
+  width: 80px;
+  height: 10px;
+  padding: 5px;
+  cursor: copy;
+}
+
+.harvard .harImg {
+  width: 800px;
+}
+
+.harvard .harText {
+  width: 500px;
+  padding: 10px;
+}
+
+.harvard .harText p {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+h2 {
+  padding: 10px;
+  width: 400px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.harvard .label {
+  font-size: 1.1rem;
+  text-align: justify;
+  width: 400px;
+}
+
+.harvard .harText .credit {
+  font-size: 0.8rem;
+  text-align: justify;
+  width: 400px;
+  opacity: 0.7;
+}
+
+.harvard hr {
+  width: 1300px;
+  background-color: #969696;
+}
+
+.harvard .description {
+  font-size: 2rem;
+  opacity: 0.9;
+  width: 500px;
+  padding: 10px 60px;
+  text-align: justify;
+}
+
+.harvard .description p {
+  font-size: 0.8rem;
+  text-align: right;
+  padding-top: 40px;
+}
+
+.harvard .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 450px;
+}
+
+.harvard .video .videoIf {
+  width: 640px;
+  height: 360px;
+}
+
+.harvard .footer {
+  height: 20px;
+  width: 1200px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  text-align: center;
+  padding-top: 60px;
+  border-top: 1px rgb(112, 112, 112) solid;
+}
+
+.paper {
+  width: 300px;
+}
+
+.paper .input {
+  width: 250px;
+  padding: 3px 10px;
+}
+
+.artNum {
+  margin: auto;
+  display: flex;
+  width: 1300px;
+  overflow-x: auto;
+}
+
+.artNum .numb {
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #e1e1e1;
+  cursor: pointer;
+}
+
+.artNum .numb:hover {
+  color: rgb(81, 140, 81);
+}
+
+.artNum .numb:active {
+  color: greenyellow;
+}
+
+.artNum .numbAct {
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 20px;
+  background-color: gray;
+  border-radius: 5px;
+  color: blanchedalmond;
+}
+
+.loadPlace {
+  display: flex;
+  margin: auto;
+  width: 1300px;
+  height: 900px;
+  background-color: rgb(38, 48, 59);
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-grid;
+  width: 70px;
+  aspect-ratio: 1;
+  animation: l6-0 .8s linear infinite;
+  transform: rotate(90deg);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+}
+
+.loader:before {
+  clip-path: polygon(100% 50%, 90.45% 79.39%, 65.45% 97.55%, 34.55% 97.55%, 9.55% 79.39%, 0% 50%, 9.55% 20.61%, 34.55% 2.45%, 65.45% 2.45%, 90.45% 20.61%, 100% 50%, 85.6% 24.14%, 63.6% 8.15%, 36.4% 8.15%, 14.4% 24.14%, 6% 50%, 14.4% 75.86%, 36.4% 91.85%, 63.6% 91.85%, 85.6% 75.86%, 94% 50%, 85.6% 24.14%);
+  background: #574951;
+}
+
+.loader:after {
+  background: #83988E;
+  clip-path: polygon(100% 50%, 65.45% 97.55%, 9.55% 79.39%, 9.55% 20.61%, 65.45% 2.45%);
+  margin: 23%;
+  translate: -143% 0;
+  transform-origin: right;
+  animation: inherit;
+  animation-name: l6-1;
+}
+
+@keyframes l6-0 {
+  0% {
+    rotate: 18deg
+  }
+
+  to {
+    rotate: -18deg
+  }
+}
+
+@keyframes l6-1 {
+  0% {
+    rotate: -54deg
+  }
+
+  to {
+    rotate: 54deg
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .provider {
+    width: 355px;
+    height: 60px;
+  }
+
+  .provider .logo {
+    padding: 10px 0px 10px 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .provider .logo img {
+    width: 40px;
+  }
+
+  .provider .title {
+    width: 315px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+
+  .harvard {
+    display: block;
+    width: 355px;
+  }
+
+  .harvard .homeImg {
+    width: 355px;
+  }
+
+  .harvard .welcome {
+    padding: 20px;
+    width: 315px;
+    font-size: 1rem;
+  }
+
+  .harvard .welcome .button {
+    border-radius: 5px;
+    width: 80px;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .harvard .result {
+    padding: 10px 8px 20px 8px;
+    font-size: 0.6rem;
+    height: 60px;
+  }
+
+  .harvard .result h2 {
+    width: 330px;
+    height: 60px;
+  }
+
+  .harvard .harImg .image {
+    width: 355px;
+    padding: 10px 0px;
+  }
+
+  .harvard .title {
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    width: 335px;
+  }
+
+  .harvard .name {
+    font-size: 1.7rem;
+    padding: 8px 5px 5px 15px;
+  }
+
+  .harvard .harImg .nameCulture {
+    display: block;
+  }
+
+  .harvard .harImg .nameCulture .culture {
+    font-size: 1.1rem;
+    padding-top: 6px;
+    padding-left: 15px;
+  }
+
+  .harvard .colorGrid {
+    grid-template-columns: auto auto auto;
+    width: 325px;
+    padding: 30px 5px;
+  }
+
+  .harvard .harText .colorGrid p {
+    width: 100px;
+    height: 20px;
+  }
+
+  .harvard .harImg {
+    width: 355px;
+  }
+
+  .harvard .harText {
+    width: 335px;
+  }
+
+  .harvard .harText p {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  h2 {
+    padding: 10px;
+    width: 315px;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .harvard .label {
+    font-size: 1rem;
+    text-align: justify;
+    width: 315px;
+  }
+
+  .harvard .harText .credit {
+    font-size: 0.7rem;
+    width: 315px;
+  }
+
+  .harvard hr {
+    width: 345px;
+  }
+
+  .harvard .description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    width: 335px;
+    padding: 10px 10px;
+  }
+
+  .harvard .description p {
+    font-size: 0.6rem;
+    padding-top: 20px;
+  }
+
+  .harvard .video {
+    width: 355px;
+    height: 220px;
+  }
+
+  .harvard .video .videoIf {
+    width: 355px;
+    height: 200px;
+  }
+
+  .harvard .footer {
+    height: 20px;
+    width: 355px;
+    font-size: 0.7rem;
+    padding-top: 30px;
+  }
+
+  .artNum {
+    margin: auto;
+    width: 335px;
+  }
+
+  .artNum .numb {
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .artNum .numbAct {
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 18px;
+    background-color: gray;
+    border-radius: 5px;
+    color: blanchedalmond;
+  }
+
+  .loadPlace {
+    width: 355px;
+    height: 800px;
+  }
+}
