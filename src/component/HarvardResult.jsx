@@ -43,6 +43,8 @@ const HarvardResult = () => {
             setTitle(dataO.data.records)
             setTotalTitle(dataO.data.info.totalrecords);
 
+            console.log("harvard detalji", harvard);
+
         } catch (err) {
             setError(err);
         }
