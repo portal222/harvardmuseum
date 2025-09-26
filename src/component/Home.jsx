@@ -22,7 +22,7 @@ const Home = () => {
                 <div className="welcome">
                     WELCOME <br></br>
                     The museums has about 250,000 items.
-                    You can search by author, or by work title, for a more precise search use quotation marks. You can also use an asterisk * after or before a few letters for things you're not sure how to spell.
+                    You can search by author, or by work title. For a more precise search use quotation marks. You can also use an asterisk * after or before a few letters for things you're not sure how to spell.
                     <br></br>
                     <br></br>     <Search />
                     <br>

@@ -88,9 +88,11 @@ const HarvardName = () => {
                                             {har.culture + " "}
                                         </p>
                                     )}
-                                    <p className="culture">
-                                        {" (" + har.people?.[0].displaydate + ") "}
-                                    </p>
+                                    {har.people?.[0].displaydate && (
+                                        <p className="culture">
+                                            {" (" + har.people?.[0].displaydate + ") "}
+                                        </p>
+                                    )}
                                 </div>
                             </div>
                         </div>

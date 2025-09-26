@@ -19,7 +19,6 @@ const HarvardResult = () => {
 
     const navigate = useNavigate();
 
-
     const globalCtx = useContext(GlobalContext);
     const searchStringValue = globalCtx.searchStringValue
 
@@ -42,8 +41,6 @@ const HarvardResult = () => {
             setTotalArt(data.data.info.totalrecords);
             setTitle(dataO.data.records)
             setTotalTitle(dataO.data.info.totalrecords);
-
-            console.log("harvard detalji", harvard);
 
         } catch (err) {
             setError(err);
@@ -99,9 +96,11 @@ const HarvardResult = () => {
                                             {har.culture + " "}
                                         </p>
                                     )}
+                                    {har.people?.[0].displaydate && (
                                     <p className="culture">
                                         {" (" + har.people?.[0].displaydate + ") "}
                                     </p>
+                                    )}
                                 </div>
 
                             </div>
@@ -230,9 +229,11 @@ const HarvardResult = () => {
                                             {har.culture + " "}
                                         </p>
                                     )}
+                                    {har.people?.[0].displaydate && (
                                     <p className="culture">
                                         {" (" + har.people?.[0].displaydate + ") "}
                                     </p>
+                                    )}
                                 </div>
                             </div>
                         </div>
